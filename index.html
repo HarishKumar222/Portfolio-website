@@ -47,7 +47,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/HarishKumarReddy_resume.pdf')"
+            onclick="window.open('./assets/Harish_Kumar_Reddy_Resume.pdf')"
           >
             Download CV
           </button>
@@ -165,7 +165,8 @@
             <h2 class="experience-sub-title project-title">IRCTC Train Booking System</h2>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishKumar222/irctc-train-booking'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishKumar222'">Live Demo</button>
+              <button class="btn btn-color-2 project-btn" onclick="openVideoModal()">Live Demo</button>
+
             </div>
           </div>
           <div class="details-container color-container">
@@ -175,7 +176,8 @@
             <h2 class="experience-sub-title project-title">ATM Simulation</h2>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishKumar222/ATM-Simulation'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishKumar222'">Live Demo</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishKumar222/ATM-Simulation'">Live Demo</button>
+
             </div>
           </div>
           <div class="details-container color-container">
@@ -185,7 +187,7 @@
             <h2 class="experience-sub-title project-title">Portfolio Website</h2>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishKumar222/Portfolio-website'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishKumar222'">Live Demo</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://mellifluous-capybara-016884.netlify.app/'">Live Demo</button>
             </div>
           </div>
         </div>
@@ -206,6 +208,17 @@
         </div>
       </div>
     </section>
+    <!-- Modal for video -->
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="close-btn" onclick="closeVideoModal()">&times;</span>
+    <video id="demoVideo" controls autoplay>
+      <source src="./assets/irctc-live.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
     <footer>
       <nav>
         <div class="nav-links-container">
